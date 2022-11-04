@@ -1,0 +1,10 @@
+/* :root { */
+/* main colors go here */
+/* } */
+
+body {
+    padding: 10px;
+    margin: 0%;
+	background-color:#00011f;
+	color: aliceblue;
+}
