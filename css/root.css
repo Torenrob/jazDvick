@@ -1,49 +1,205 @@
 :root {
-   font-size: 16px;
-   --bg-color: #0a0a15;
-   --sandal: #ab8266;
-   --gondola: #190f14;
-   --tobacco-brown: #735844;
-   --rock: #45352e;
-   --fuscous-gray: #524d47;
-   --gunsmoke: #888e8c;
-   --jumbo: #818285;
-   --emperor: #4d444c;
-   --cognac: #943c18;
+   --cocoa-brown: #291d21;
+   --mongoose: #b69678;
+   --shiraz: #a60c1c;
+   --double-spanish: #e6d4ba;
+   --millbrook: #69533b;
+   --clam-shell: #d0baad;
+   --kumera: #935f25;
+   --valencia: #d94450;
+   --picton-blue: #32cae5;
+   --bg-color: #051417;
+   --accent: #1f7f90;
+   --text-color: #ebfafc;
+   --link-color: #dcdddd;
+   --trans: 0.7s;
 }
 
 body {
-   padding: 0;
    margin: 0;
    background-color: var(--bg-color);
+   color: var(--text-color);
 }
 
 body::-webkit-scrollbar {
-   width: 0.45rem;
+   width: 0.5rem;
    background-color: var(--bg-color);
-   border-radius: 150vw;
-   border: solid #524d47;
 }
 
 body::-webkit-scrollbar-thumb {
-   background-color: #524d47;
-   border-radius: 150vw;
-}
-
-.container {
-   width: 100%;
-   height: 100%;
+   background: linear-gradient(to right, var(--bg-color) 40%, var(--accent));
+   border-radius: 8px;
+   margin: 5rem;
 }
 
 main {
    margin-left: 7rem;
    padding: 1rem;
-   font-size: xx-large;
    margin-right: 85rem;
 }
 
+.navBackBorder {
+   height: 100%;
+   position: absolute;
+   background: linear-gradient(
+      to bottom,
+      var(--bg-color) 4%,
+      20%,
+      var(--accent),
+      var(--bg-color) 98%
+   );
+   width: 7.5rem;
+}
+
+.navForeground {
+   position: relative;
+   bottom: 90px;
+   background-color: var(--bg-color);
+   margin-right: 4%;
+   margin-top: 0%;
+   height: 100%;
+   transition: var(--trans);
+}
+
 .navbar {
-   width: 7rem;
-   height: 100vh;
+   width: 8rem;
+   height: 100%;
    position: fixed;
+}
+
+.nav-bar {
+   position: relative;
+   padding-left: 0%;
+   padding-right: 10%;
+   margin-top: 100%;
+   margin-bottom: 0%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+}
+
+.nav-item {
+   width: 100%;
+}
+
+.nav-item:last-child {
+   position: relative;
+   bottom: 40px;
+   margin: auto;
+}
+
+.nav-link {
+   display: flex;
+   align-items: center;
+   height: 5rem;
+   position: relative;
+   top: 90px;
+}
+
+.link-text {
+   z-index: 1;
+   color: var(--accent);
+   position: relative;
+   right: 87px;
+   opacity: 0;
+   transition: var(--trans);
+   transform: translateX(-35px);
+}
+
+#mentorNav {
+   position: relative;
+   right: 98px;
+}
+
+#pubSpeak {
+   position: relative;
+   right: 85px;
+}
+
+#pathLogo {
+   position: relative;
+   right: 1px;
+}
+
+.icon {
+   display: block;
+   z-index: 2;
+   cursor: pointer;
+   transition: var(--trans);
+}
+
+.icon:hover {
+   transform: translateX(65.5px);
+   transition: var(--trans);
+}
+
+.nav-bar li.active .icon {
+   transform: translateX(65.5px);
+   transition: var(--trans);
+}
+
+.nav-bar li.active .link-text {
+   opacity: 1;
+   transform: translateX(3px);
+}
+
+nav-bar li:active .topInd {
+   position: absolute;
+   top: -25px;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(
+      to bottom,
+      var(--bg-color) 4%,
+      20%,
+      var(--accent),
+      var(--bg-color) 98%
+   );
+   transition: var(--trans);
+}
+
+nav-bar li:active .indicator {
+   position: absolute;
+   width: 69.3%;
+   height: 100%;
+   background: var(--bg-color);
+   transition: var(--trans);
+}
+
+nav-bar li:active .indi2 {
+   position: relative;
+   width: 70px;
+   height: 70px;
+   background: var(--link-color);
+   top: 116px;
+   left: 79px;
+   border-radius: 50%;
+   border: 5px solid var(--bg-color);
+   transition: var(--trans);
+}
+
+nav-bar li:active .indi2:before {
+   content: "";
+   position: absolute;
+   bottom: 107%;
+   left: 42.8%;
+   width: 6px;
+   height: 20px;
+   background: transparent;
+   border-bottom-right-radius: 50px;
+   box-shadow: 1px 4px var(--bg-color);
+}
+
+nav-bar li:active .indi2:after {
+   content: "";
+   position: absolute;
+   top: 107%;
+   left: 42.8%;
+   width: 6px;
+   height: 20px;
+   background: transparent;
+   border-top-right-radius: 50px;
+   box-shadow: 1px -3.5px var(--bg-color);
 }

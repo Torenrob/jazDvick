@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style>.cls-1,.cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-width:1px;}.cls-1{stroke-linejoin:bevel;}.cls-2{stroke-linejoin:round;fill-rule:evenodd;}</style>
+    <bx:grid x="0" y="0" width="66.568" height="63.018"/>
+  </defs>
+  <g id="ic-contact-mail" transform="matrix(1, 0, 0, 1, 20.5, 20.5)">
+    <rect class="cls-1" x="2" y="5" width="20" height="14" rx="2" style="stroke: #1f7f90;"/>
+    <path class="cls-2" d="M2.58,5.59l8.23,8.22a2,2,0,0,0,2.83,0l8-8" style="stroke: #1f7f90;"/>
+  </g>
+</svg>
