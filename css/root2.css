@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Buda&family=Bungee+Hairline&family=Caveat:wght@400;500;600;700&family=East+Sea+Dokdo&family=Edu+QLD+Beginner:wght@400;500;600;700&family=Fondamento:ital@0;1&family=Forum&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+39+Extended+Text&family=Megrim&family=Neonderthaw&family=Poiret+One&family=Splash&family=Zen+Loop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&family=Smooch+Sans:wght@300;400&display=swap");
+
+:root {
+   font-size: 16px;
+   --cocoa-brown: #291d21;
+   --mongoose: #b69678;
+   --shiraz: #a60c1c;
+   --double-spanish: #e6d4ba;
+   --millbrook: #69533b;
+   --clam-shell: #d0baad;
+   --kumera: #935f25;
+   --valencia: #d94450;
+   --picton-blue: #32cae5;
+   --bg-color: #051417;
+   --accent: #1f7f90;
+   --text-color: #ebfafc;
+   --link-color: #dcdddd;
+   --trans: 0.6s;
+   --fAladin: "Aladin", cursive;
+   --fCaveat: "Caveat", cursive;
+   --fDokdo: "East Sea Dokdo", cursive;
+   --fQld: "Edu QLD Beginner", cursive;
+   --fFondamento: "Fondamento", cursive;
+   --fJosefin: "Josefin Slab", serif;
+   --fNeonderthaw: "Neonderthaw", cursive;
+   --fSplash: "Splash", cursive;
+   --fBuda: "Buda", cursive;
+   --fBungee: "Bungee Hairline", cursive;
+   --fForum: "Forum", cursive;
+   --fLibre: "Libre Barcode 39 Extended Text", cursive;
+   --fMegrim: "Megrim", cursive;
+   --fPoiret: "Poiret One", cursive;
+   --fZen: "Zen Loop", cursive;
+   --fMarkazi: "Markazi Text", serif;
+   --fSmooch: "Smooch Sans", sans-serif;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+address,
+article,
+aside,
+blockquote,
+canvas,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hr,
+li,
+main,
+nav,
+noscript,
+ol,
+p,
+pre,
+section,
+table,
+tfoot,
+ul,
+video,
+body,
+html {
+   margin: 0;
+   padding: 0;
+}
+
+body::-webkit-scrollbar {
+   width: 0.25rem;
+   height: 0.25rem;
+   background-color: var(--link-color);
+}
+
+body::-webkit-scrollbar-thumb {
+   background: var(--accent);
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--link-color);
+   color: var(--link-color);
+   align-items: stretch;
+   width: 100%;
+   height: 100%;
+   font-family: var(--fMarkazi);
+}
+
+/* entire header*/
+header {
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   background: var(--bg-color);
+   width: 100vw;
+   position: fixed;
+}
+
+#jvdLogo {
+   padding-right: 11%;
+}
+
+/*header brand logo & icons*/
+header nav img {
+   position: relative;
+   max-width: fit-content;
+   width: 8rem;
+   height: 2.5rem;
+}
+
+/*entire nav bar */
+header nav {
+   position: relative;
+   display: flex;
+   align-items: center;
+   align-items: stretch;
+   margin-left: 1rem;
+}
+
+/*toggle btn styling */
+.toggleBtn {
+   position: relative;
+   display: none;
+   flex-direction: column;
+   width: 1.7rem;
+   height: rem;
+   top: 0rem;
+   justify-content: space-between;
+}
+
+.toggleBtn .bar {
+   width: 100%;
+   height: 0.15rem;
+   background-color: var(--accent);
+}
+
+/*nav list */
+nav ul {
+   display: flex;
+}
+
+/*nav list items*/
+nav ul li {
+   list-style: none;
+   width: 5rem;
+   justify-content: center;
+   align-items: center;
+}
+
+/*nav link, text, and icon*/
+nav ul li a {
+   display: flex;
+   text-decoration: none;
+   color: var(--accent);
+   height: 2.5rem;
+   cursor: pointer;
+}
+
+/*nav text */
+nav ul li a span {
+   display: flex;
+   z-index: 3;
+   opacity: 0;
+   transition: var(--trans);
+   font-weight: bolder;
+}
+
+#homeSpan {
+   position: relative;
+   top: 0.8rem;
+   left: 1.2rem;
+}
+
+#aboutSpan {
+   position: relative;
+   top: 0.8rem;
+   left: 0.5rem;
+}
+
+#mentorSpan {
+   position: relative;
+   top: 0.8rem;
+   left: 0.1rem;
+}
+
+#pubSpan {
+   position: relative;
+   text-align: center;
+   line-height: 0.7;
+   top: 0.6rem;
+   left: -0.25rem;
+}
+
+#eventSpan {
+   position: relative;
+   left: 1.1rem;
+   top: 0.8rem;
+}
+
+#lhSpan {
+   position: relative;
+   left: 0.2rem;
+   top: 0.8rem;
+}
+
+#pathSpan {
+   position: relative;
+   text-align: center;
+   line-height: 0.7;
+   left: -0.25rem;
+   top: 0.7rem;
+}
+
+#contSpan {
+   position: relative;
+   left: 0.9rem;
+   top: 0.7rem;
+}
+
+/*nav icons */
+nav ul li a img {
+   z-index: 3;
+   position: absolute;
+   margin-left: 1rem;
+}
+
+/*nav bar selection indicator styling*/
+nav ul .indicator {
+   z-index: 2;
+   position: absolute;
+   left: 16.4%;
+   width: 4.7rem;
+   height: 3.2rem;
+   background-color: var(--link-color);
+   transition: var(--trans);
+   border-bottom-left-radius: 15%;
+   border-bottom-right-radius: 15%;
+}
+
+/*navbar links cursor reaction */
+nav ul li a img:hover {
+   transition: var(--trans);
+   opacity: 0.25;
+}
+
+nav ul li:hover span {
+   opacity: 1;
+}
+
+nav li.active img {
+   opacity: 1;
+   transition: var(--trans);
+}
+
+nav li.active img:hover {
+   opacity: 1;
+   transition: var(--trans);
+}
+
+nav ul li.active span {
+   opacity: 1;
+   transform: translateY(45%);
+}
+
+nav ul li.active #pubSpan {
+   opacity: 1;
+   transform: translateY(60%);
+}
+
+nav ul li.active #pathSpan {
+   opacity: 1;
+   transform: translateY(60%);
+}
+
+/*navbar indicator reactive styling */
+nav ul li:nth-child(2).active ~ .indicator {
+   transform: translateX(calc(104% * 1));
+}
+nav ul li:nth-child(3).active ~ .indicator {
+   transform: translateX(calc(104% * 2));
+}
+nav ul li:nth-child(4).active ~ .indicator {
+   height: 3.8rem;
+   transform: translateX(calc(106.5% * 3));
+}
+nav ul li:nth-child(5).active ~ .indicator {
+   transform: translateX(calc(106.5% * 4));
+}
+nav ul li:nth-child(6).active ~ .indicator {
+   transform: translateX(calc(106.2% * 5));
+}
+nav ul li:nth-child(7).active ~ .indicator {
+   height: 3.8rem;
+   transform: translateX(calc(106.25% * 6));
+}
+nav ul li:nth-child(8).active ~ .indicator {
+   transform: translateX(calc(106.4% * 7));
+}
+
+/*responsive navbar styling */
+@media (max-width: 1000px) {
+   body header {
+      flex-direction: column;
+   }
+
+   header img {
+      margin-left: 1rem;
+      padding: 0rem !important;
+   }
+
+   header nav {
+      margin: 0%;
+      display: flex;
+      flex-direction: column;
+   }
+
+   #respHeader {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .toggleBtn {
+      display: flex;
+      width: 3.5rem;
+      padding: 0.75rem;
+      cursor: pointer;
+   }
+
+   .navList {
+      position: relative;
+      flex-direction: column;
+      display: none;
+      transition: var(--trans);
+   }
+
+   .navListShow {
+      position: relative;
+      flex-direction: column;
+      display: flex;
+   }
+
+   header nav ul li {
+      width: 100vw;
+   }
+
+   header nav ul li a {
+      width: 100vw;
+      justify-content: center;
+      height: 1.8rem;
+   }
+
+   header nav ul li a span {
+      opacity: 1;
+      left: 0% !important;
+      right: 0% !important;
+      top: 0% !important;
+      bottom: 0% !important;
+      line-height: 0% !important;
+      align-items: center;
+      letter-spacing: 0.1rem;
+   }
+
+   header nav ul li a img {
+      display: none;
+   }
+
+   .indicator {
+      display: none;
+   }
+
+   nav ul li a:hover {
+      background-color: var(--accent);
+      color: var(--link-color);
+   }
+
+   nav ul li.active span {
+      opacity: 1;
+      transform: translateY(0%);
+   }
+
+   nav ul li.active #pubSpan {
+      opacity: 1;
+      transform: translateY(0%);
+   }
+
+   nav ul li.active #pathSpan {
+      opacity: 1;
+      transform: translateY(0%);
+   }
+}
+
+main {
+   max-width: 100vw;
+   z-index: -1;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-content: center;
+   margin-top: 2.5rem;
+}
+
+main #home {
+   display: flex;
+   justify-content: space-around;
+}
+
+img {
+   max-width: 100%;
+}

@@ -1,107 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
    <head>
-      <meta charset="UTF-8" />
       <meta name="author" content="Toren Robison" />
       <meta name="keywords" content="Jaz Vick Website" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="stylesheet" href="css/root.css" />
-      <title>Jaz D. Vick</title>
-   </head>
-   <body>
-      <header>
-         <nav class="navbar">
-            <div class="navBackBorder">
-               <div class="navForeground">
-                  <ul class="nav-bar" type="none">
-                     <li class="nav-item active">
-                        <a href="#" class="nav-link">
-                           <img
-                              class="icon"
-                              src="svg/home-svgrepo-com (1).svg"
-                           />
-                           <span class="link-text">Home</span>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                           <img
-                              class="icon"
-                              src="svg/document-svgrepo-com.svg"
-                           />
-                           <span class="link-text">About Jaz'</span>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                           <img class="icon" src="svg/updatedmentoricon.svg" />
-                           <span class="link-text" id="mentorNav"
-                              >Mentorship</span
-                           >
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                           <img class="icon" src="svg/pubspicon.svg" />
-                           <span class="link-text" id="pubSpeak"
-                              >Public Speaking</span
-                           >
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                           <img class="icon" src="svg/colcalendaricon.svg" />
-                           <span class="link-text">Events</span>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                           <img
-                              class="icon"
-                              src="svg/livinghopelogo.svg"
-                              id="lhLogo"
-                           />
-                           <span class="link-text">Living Hope</span>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                           <img
-                              class="icon"
-                              src="svg/download.svg"
-                              id="pathLogo"
-                           />
-                           <span class="link-text">The Path Church</span>
-                        </a>
-                     </li>
-                     <li class="nav-item">
-                        <a href="#" class="nav-link">
-                           <img
-                              class="icon"
-                              src="svg/contact-mail-svgrepo-com (1).svg"
-                           />
-                           <span class="link-text">Contact</span>
-                        </a>
-                     </li>
-                  </ul>
-                  <div class="topInd">
-                     <div class="indicator"><div class="indi2"></div></div>
-                  </div>
-               </div>
-            </div>
-         </nav>
-      </header>
-      <main>
-         <div class="content">
-            <img id="jazpic" src="img/tuxpi.com.1667634557.jpg" alt="" />
-         </div>
-      </main>
-      <footer></footer>
-      <script src="js/navfuncs.js"></script>
       <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
          crossorigin="anonymous"
       ></script>
+      <link rel="stylesheet" href="css/root2.css" />
+      <title>Jaz D. Vick</title>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div id="respHeader">
+            <img id="jvdLogo" src="/img/Jaz' D Vick-1 (6).png" />
+            <!-- <h6 class="tagLine">"Bringing Hope and Buiding Community"</h6> -->
+            <a class="toggleBtn">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </a>
+            </div>
+            <ul class="navList">
+               <li class="active">
+                  <a>
+                     <span id="homeSpan">Home</span>
+                     <img src="svg/home-svgrepo-com (1).svg" />
+                  </a>
+               </li>
+               <li>
+                  <a>
+                     <span id="aboutSpan">About Jaz'</span>
+                     <img src="svg/document-svgrepo-com.svg" />
+                  </a>
+               </li>
+               <li>
+                  <a>
+                     <span id="mentorSpan">Mentorship</span>
+                     <img src="svg/updatedmentoricon.svg" />
+                  </a>
+               </li>
+               <li>
+                  <a>
+                     <span id="pubSpan">Public Speaking</span>
+                     <img src="svg/pubspicon.svg" />
+                  </a>
+               </li>
+               <li>
+                  <a>
+                     <span id="eventSpan">Events</span>
+                     <img src="svg/colcalendaricon.svg" />
+                  </a>
+               </li>
+               <li>
+                  <a>
+                     <span id="lhSpan">Living Hope</span>
+                     <img src="svg/livinghopelogo.svg" />
+                  </a>
+               </li>
+               <li>
+                  <a>
+                     <span id="pathSpan">The Path Church</span>
+                     <img src="svg/download.svg" id="pathLogo" />
+                  </a>
+               </li>
+               <li>
+                  <a>
+                     <span id="contSpan">Contact</span>
+                     <img src="svg/contact-mail-svgrepo-com (1).svg" />
+                  </a>
+               </li>
+               <div class="indicator"></div>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <div id="home">
+            <img id="jazpic" src="img/tuxpi.com.1668110479.jpg" alt="" />
+         </div>
+         <div id="about"></div>
+         <div id="Mentorship"></div>
+         <div id="Public Speaking"></div>
+         <div id="Events"></div>
+         <div id="Living Hope"></div>
+         <div id="The Path Church"></div>
+         <div id="Contact"></div>
+      </main>
+      <script src="js/navfuncs.js"></script>
    </body>
 </html>

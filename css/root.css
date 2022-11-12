@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Buda&family=Bungee+Hairline&family=Caveat:wght@400;500;600;700&family=East+Sea+Dokdo&family=Edu+QLD+Beginner:wght@400;500;600;700&family=Fondamento:ital@0;1&family=Forum&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Barcode+39+Extended+Text&family=Megrim&family=Neonderthaw&family=Poiret+One&family=Splash&family=Zen+Loop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text&family=Smooch+Sans:wght@300;400&display=swap");
+
 :root {
+   font-size: 16px;
    --cocoa-brown: #291d21;
    --mongoose: #b69678;
    --shiraz: #a60c1c;
@@ -13,12 +17,31 @@
    --text-color: #ebfafc;
    --link-color: #dcdddd;
    --trans: 0.7s;
+   --fAladin: "Aladin", cursive;
+   --fCaveat: "Caveat", cursive;
+   --fDokdo: "East Sea Dokdo", cursive;
+   --fQld: "Edu QLD Beginner", cursive;
+   --fFondamento: "Fondamento", cursive;
+   --fJosefin: "Josefin Slab", serif;
+   --fNeonderthaw: "Neonderthaw", cursive;
+   --fSplash: "Splash", cursive;
+   --fBuda: "Buda", cursive;
+   --fBungee: "Bungee Hairline", cursive;
+   --fForum: "Forum", cursive;
+   --fLibre: "Libre Barcode 39 Extended Text", cursive;
+   --fMegrim: "Megrim", cursive;
+   --fPoiret: "Poiret One", cursive;
+   --fZen: "Zen Loop", cursive;
+   --fMarkazi: "Markazi Text", serif;
+   --fSmooch: "Smooch Sans", sans-serif;
 }
 
 body {
-   margin: 0;
+   margin: 0%;
+   padding: 0%;
    background-color: var(--bg-color);
    color: var(--text-color);
+   height: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -32,10 +55,35 @@ body::-webkit-scrollbar-thumb {
    margin: 5rem;
 }
 
+.row {
+   margin: 0%;
+}
+
 main {
-   margin-left: 7rem;
-   padding: 1rem;
-   margin-right: 85rem;
+   margin-left: 8.7rem;
+   padding: 0%;
+}
+
+main header {
+   margin-top: 1%;
+   margin-right: 2%;
+}
+
+.title {
+   font-family: var(--fPoiret);
+   font-size: 2rem;
+   text-align: end;
+}
+
+.contentContainer {
+   display: flex;
+   align-items: right;
+}
+
+.navbar {
+   width: 8rem;
+   height: 100vh;
+   position: fixed;
 }
 
 .navBackBorder {
@@ -43,50 +91,37 @@ main {
    position: absolute;
    background: linear-gradient(
       to bottom,
-      var(--bg-color) 4%,
+      var(--bg-color) 2.5%,
       20%,
       var(--accent),
-      var(--bg-color) 98%
+      var(--bg-color) 95%
    );
-   width: 7.5rem;
+   width: 8.7rem;
 }
 
 .navForeground {
    position: relative;
-   bottom: 90px;
+   padding-top: 80%;
+   bottom: 60px;
    background-color: var(--bg-color);
-   margin-right: 4%;
+   margin-right: 10%;
    margin-top: 0%;
    height: 100%;
    transition: var(--trans);
 }
 
-.navbar {
-   width: 8rem;
-   height: 100%;
-   position: fixed;
-}
-
 .nav-bar {
    position: relative;
+   margin: 0%;
    padding-left: 0%;
    padding-right: 10%;
-   margin-top: 100%;
-   margin-bottom: 0%;
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 100%;
 }
 
 .nav-item {
    width: 100%;
-}
-
-.nav-item:last-child {
-   position: relative;
-   bottom: 40px;
-   margin: auto;
 }
 
 .nav-link {
@@ -98,28 +133,22 @@ main {
 }
 
 .link-text {
-   z-index: 1;
    color: var(--accent);
    position: relative;
-   right: 87px;
+   right: 90px;
    opacity: 0;
    transition: var(--trans);
    transform: translateX(-35px);
 }
 
-#mentorNav {
+#contSpan {
    position: relative;
-   right: 98px;
-}
-
-#pubSpeak {
-   position: relative;
-   right: 85px;
+   right: 88px;
 }
 
 #pathLogo {
    position: relative;
-   right: 1px;
+   left: 0.3px;
 }
 
 .icon {
@@ -130,12 +159,17 @@ main {
 }
 
 .icon:hover {
-   transform: translateX(65.5px);
    transition: var(--trans);
+   opacity: 0.3;
+}
+
+.nav-bar li:hover .link-text {
+   opacity: 1;
+   transform: translateX(3px);
 }
 
 .nav-bar li.active .icon {
-   transform: translateX(65.5px);
+   transform: translateX(75.5px);
    transition: var(--trans);
 }
 
@@ -144,62 +178,73 @@ main {
    transform: translateX(3px);
 }
 
-nav-bar li:active .topInd {
+.indicator {
    position: absolute;
-   top: -25px;
-   left: 0;
-   height: 100%;
-   width: 100%;
-   background: linear-gradient(
-      to bottom,
-      var(--bg-color) 4%,
-      20%,
-      var(--accent),
-      var(--bg-color) 98%
-   );
-   transition: var(--trans);
-}
-
-nav-bar li:active .indicator {
-   position: absolute;
-   width: 69.3%;
-   height: 100%;
-   background: var(--bg-color);
-   transition: var(--trans);
-}
-
-nav-bar li:active .indi2 {
-   position: relative;
-   width: 70px;
-   height: 70px;
+   width: 55px;
+   height: 55px;
    background: var(--link-color);
-   top: 116px;
-   left: 79px;
+   top: 97.6px;
+   left: 100px;
    border-radius: 50%;
    border: 5px solid var(--bg-color);
    transition: var(--trans);
 }
 
-nav-bar li:active .indi2:before {
+.indicator:before {
    content: "";
    position: absolute;
-   bottom: 107%;
-   left: 42.8%;
-   width: 6px;
-   height: 20px;
+   bottom: 108.5%;
+   left: 40.5%;
+   width: 12px;
+   height: 26px;
    background: transparent;
-   border-bottom-right-radius: 50px;
-   box-shadow: 1px 4px var(--bg-color);
+   border-bottom-right-radius: 80px;
+   box-shadow: 3px 4.2px var(--bg-color);
 }
 
-nav-bar li:active .indi2:after {
+.indicator:after {
    content: "";
    position: absolute;
-   top: 107%;
-   left: 42.8%;
-   width: 6px;
-   height: 20px;
+   top: 108.5%;
+   left: 40.5%;
+   width: 12px;
+   height: 26px;
    background: transparent;
-   border-top-right-radius: 50px;
-   box-shadow: 1px -3.5px var(--bg-color);
+   border-top-right-radius: 80px;
+   box-shadow: 3px -4.2px var(--bg-color);
+}
+
+.nav-bar li:nth-child(1).active ~ .indi2 {
+   transform: translateY(calc(80px * 0));
+}
+.nav-bar li:nth-child(2).active ~ .indi2 {
+   transform: translateY(calc(80px * 1));
+}
+.nav-bar li:nth-child(3).active ~ .indi2 {
+   transform: translateY(calc(81px * 2));
+}
+.nav-bar li:nth-child(4).active ~ .indi2 {
+   transform: translateY(calc(80px * 3));
+}
+.nav-bar li:nth-child(5).active ~ .indi2 {
+   transform: translateY(calc(80px * 4));
+}
+.nav-bar li:nth-child(6).active ~ .indi2 {
+   transform: translateY(calc(80px * 5));
+}
+.nav-bar li:nth-child(7).active ~ .indi2 {
+   transform: translateY(calc(80px * 6));
+}
+.nav-bar li:nth-child(8).active ~ .indi2 {
+   transform: translateY(calc(80px * 7));
+}
+
+#jazpic {
+   position: fixed;
+   opacity: 0.1;
+   right: -20%;
+   bottom: -10%;
+   transform: scaleX(-1);
+   max-width: 100%;
+   max-height: 100%;
 }

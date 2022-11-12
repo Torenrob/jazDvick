@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 760 760" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <g transform="matrix(1, 0, 0, 1, 264.700989, 69.999985)">
-    <path d="M 76.866 278.838 L 153.732 278.838 L 153.732 303.751 L 204.976 303.751 L 230.598 253.925 L 0 253.925 L 25.622 303.751 L 76.866 303.751 L 76.866 278.838 Z" style="fill: rgba(216, 216, 216, 0); stroke-width: 12px; stroke: #1f7f90; stroke-linecap: round; stroke-linejoin: round;"/>
-    <path d="M 102.488 440.815 C 76.866 303.751 76.866 278.838 76.866 278.838 L 90.448 278.838 L 102.488 278.838 L 115.595 278.838 L 128.11 278.838 L 141.451 278.838 L 153.732 278.838 C 137.13 411.714 127.691 440.396 128.11 440.815" style="fill: rgba(216, 216, 216, 0); stroke-width: 12px; stroke: #1f7f90; stroke-linejoin: round; stroke-linecap: round;"/>
-    <line style="fill: rgb(216, 216, 216); stroke-width: 12px; stroke: #1f7f90; paint-order: stroke; stroke-linecap: round;" x1="51.244" y1="440.815" x2="179.354" y2="440.815"/>
-    <path style="fill: rgba(216, 216, 216, 0); stroke-width: 8px; stroke: #1f7f90;" d="M 66.717 251.682 C 66.717 251.682 61.79913010312574 223.24582389175094 67.536 213.308 C 73.54560381891527 202.8977265433693 103.552 191.471 103.552 191.471" bx:d="M 66.717 251.682 R 67.536 213.308 R 103.552 191.471 1@6f0def38"/>
-    <ellipse style="fill: #1f7f90; stroke: rgba(0, 0, 0, 0);" cx="105.382" cy="191.642" rx="12.811" ry="12.457"/>
+  <defs>
+    <bx:grid x="0" y="0" width="51.373" height="48.858"/>
+  </defs>
+  <g>
+    <path d="M 320.065 327.626 L 439.935 327.626 L 439.935 369.497 L 519.849 369.497 L 559.805 285.755 L 200.195 285.755 L 240.151 369.497 L 320.065 369.497 L 320.065 327.626 Z" style="fill: rgba(216, 216, 216, 0); stroke: rgb(31, 127, 144); stroke-linecap: round; stroke-linejoin: round; stroke-width: 31px;"/>
+    <path d="M 360.022 599.861 C 320.065 369.497 320.065 327.626 320.065 327.626 L 341.246 327.626 L 360.022 327.626 L 380.462 327.626 L 399.978 327.626 L 420.783 327.626 L 439.935 327.626 C 414.045 550.951 399.325 599.157 399.978 599.861" style="fill: rgba(216, 216, 216, 0); stroke: rgb(31, 127, 144); stroke-linejoin: round; stroke-linecap: round; stroke-width: 31px;"/>
+    <line style="fill: rgb(216, 216, 216); stroke: rgb(31, 127, 144); paint-order: stroke; stroke-linecap: round; stroke-width: 31px;" x1="280.108" y1="599.861" x2="479.892" y2="599.861"/>
+    <path style="fill: rgba(216, 216, 216, 0); stroke: rgb(31, 127, 144); stroke-width: 31px;" d="M 304.238 281.985 C 304.238 281.985 296.21151620388633 234.28379015146828 305.515 217.49 C 315.00318426018174 200.3628056203511 361.681 180.788 361.681 180.788" bx:d="M 304.238 281.985 R 305.515 217.49 R 361.681 180.788 1@a9fe38d0"/>
+    <ellipse style="fill: rgb(31, 127, 144); stroke: rgba(0, 0, 0, 0); stroke-width: 31px;" cx="373.757" cy="175.895" rx="29.2" ry="29.321"/>
   </g>
 </svg>

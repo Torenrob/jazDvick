@@ -1,0 +1,2 @@
+# ignore vscode folder - specifically for settings.json doc - this is a peacock extension setting file - no project dependent settings
+.vscode
