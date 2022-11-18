@@ -1,0 +1,3 @@
+pageNavSelection();
+
+toggleMenuSmallScreen();

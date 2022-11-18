@@ -9,66 +9,65 @@
          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
          crossorigin="anonymous"
       ></script>
-      <link rel="stylesheet" href="css/root2.css" />
+      <link rel="stylesheet" href="css/root.css" />
       <title>Jaz D. Vick</title>
    </head>
    <body>
       <header>
          <nav>
-            <div id="respHeader">
-            <img id="jvdLogo" src="/img/Jaz' D Vick-1 (6).png" />
-            <!-- <h6 class="tagLine">"Bringing Hope and Buiding Community"</h6> -->
-            <a class="toggleBtn">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
-            </a>
+            <div class="respHeaderWrap">
+               <img id="jvdLogo" src="/img/jazdvicklogo.png" />
+               <a class="toggleBtn">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+               </a>
             </div>
             <ul class="navList">
                <li class="active">
-                  <a>
+                  <a href="#home">
                      <span id="homeSpan">Home</span>
                      <img src="svg/home-svgrepo-com (1).svg" />
                   </a>
                </li>
                <li>
-                  <a>
-                     <span id="aboutSpan">About Jaz'</span>
+                  <a href="#about">
+                     <span id="aboutSpan">About</span>
                      <img src="svg/document-svgrepo-com.svg" />
                   </a>
                </li>
                <li>
-                  <a>
+                  <a href="#mentorship">
                      <span id="mentorSpan">Mentorship</span>
                      <img src="svg/updatedmentoricon.svg" />
                   </a>
                </li>
                <li>
-                  <a>
+                  <a href="#publicSpeaking">
                      <span id="pubSpan">Public Speaking</span>
                      <img src="svg/pubspicon.svg" />
                   </a>
                </li>
                <li>
-                  <a>
+                  <a href="#events">
                      <span id="eventSpan">Events</span>
                      <img src="svg/colcalendaricon.svg" />
                   </a>
                </li>
                <li>
-                  <a>
+                  <a href="#livingHope">
                      <span id="lhSpan">Living Hope</span>
                      <img src="svg/livinghopelogo.svg" />
                   </a>
                </li>
                <li>
-                  <a>
+                  <a href="#thePathChurch">
                      <span id="pathSpan">The Path Church</span>
                      <img src="svg/download.svg" id="pathLogo" />
                   </a>
                </li>
                <li>
-                  <a>
+                  <a href="#contact">
                      <span id="contSpan">Contact</span>
                      <img src="svg/contact-mail-svgrepo-com (1).svg" />
                   </a>
@@ -78,17 +77,49 @@
          </nav>
       </header>
       <main>
-         <div id="home">
-            <img id="jazpic" src="img/tuxpi.com.1668110479.jpg" alt="" />
+         <div class="pageTabs" id="home">
+            <div id="jazvidwrap">
+               <video
+                  id="jazvid"
+                  src="vid/jazvids.mp4"
+                  autoplay
+                  loop
+                  muted
+               ></video>
+            </div>
+            <div id="home1"></div>
+            <span id="homequote">Bringing Hope and Buiding Community</span>
+            <div id="homecont">
+               <div id="home2"></div>
+               <span id="leftHomeSpan"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam quam minima eum, soluta magni molestias voluptas omnis
+                  dolorem enim vel consequuntur iusto temporibus fugiat aperiam
+                  velit ut quo repudiandae beatae.</span
+               >
+               <div id="home3"></div>
+               <span id="rightHomeSpan"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores fugit hic exercitationem, expedita iusto eaque,
+                  corrupti tenetur consequuntur totam, rem magni magnam earum
+                  error officiis id. Maxime quisquam reiciendis labore.</span
+               >
+            </div>
          </div>
-         <div id="about"></div>
-         <div id="Mentorship"></div>
-         <div id="Public Speaking"></div>
-         <div id="Events"></div>
-         <div id="Living Hope"></div>
-         <div id="The Path Church"></div>
-         <div id="Contact"></div>
+         <div class="pageTabs whiteBg" id="about">
+            About<img class="jazpic" src="svg/jazpicksvg.svg" />
+         </div>
+         <div class="pageTabs" id="mentorship">Mentorship</div>
+         <div class="pageTabs lightBlueBg" id="publicSpeaking">
+            Public Speaking
+         </div>
+         <div class="pageTabs whiteBg" id="events">Events</div>
+         <div class="pageTabs yellowBg" id="livingHope">Living Hope</div>
+         <div class="pageTabs whiteBg" id="thePathChurch">The Path Church</div>
+         <div class="pageTabs" id="contact">Contact</div>
       </main>
-      <script src="js/navfuncs.js"></script>
+      <footer></footer>
+      <script src="js/navBarFuncs.js"></script>
+      <script src="js/index.js"></script>
    </body>
 </html>
